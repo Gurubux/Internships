@@ -1,0 +1,28 @@
+Video Classification
+"https://www.analyticsvidhya.com/blog/2019/09/step-by-step-deep-learning-tutorial-video-classification-python/"
+We can say that videos are a collection of a set of images arranged in a specific order. These sets of images are also referred to as frames.
+
+Steps that we will be following to build our video classification model:
+	- Explore the dataset and create the training and validation set. We will use the training set to train the model and validation set to evaluate the trained model
+	- Extract frames from all the videos in the training as well as the validation set
+	- Preprocess these frames and then train a model using the frames in the training set. Evaluate the model using the frames present in the validation set
+	- Once we are satisfied with the performance on the validation set, use the trained model to classify new videos
+
+It is very important to keep the videos belonging to the same group separate in training and testing. Since the videos in a group are obtained from a single long video, sharing videos from the same group in training and testing sets would give high performance.
+
+
+store the name of videos in a dataframe:
+
+
+
+"https://towardsdatascience.com/introduction-to-video-classification-6c6acbc57356"
+PAPER - "https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/42455.pdf"
+
+
+
+"https://www.pyimagesearch.com/2019/07/15/video-classification-with-keras-and-deep-learning/"
+
+
+
+
+"https://medium.com/@dtuk81/classification-of-video-clips-d7f9d1bdd645"
