@@ -2,3 +2,7 @@
 *.jpg
 *.zip
 *.csv
+*.docx#
+*.xlsx#
+*.csv#
+*.xlsx#
