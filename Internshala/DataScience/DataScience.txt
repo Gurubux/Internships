@@ -1,0 +1,109 @@
+1. Data Science
+2. Python
+3. Statistics
+4. Predictive Modelling and Machine Learning
+----------------------------------------------------------------------------------------------------
+1. Data Science
+- Overview
+- Terminologies
+- Applications
+- Module Test
+
+- Overview
+Why Data Science
+	- Amount of data collected is high. 90% of the data is collected in the past 2 years
+	- Data Storage is cheaper
+	- Computation cost is cheaper and continue to fall
+	AmazonGo
+	Driver-less cars
+	Impaired vision
+
+- Terminologies
+	MIS - Management Information Systems - Collect Data
+	Detective Analysis - Answers why has something happened
+	Dashboardning/Business Intelligence - Realtime data display. Answers realtime questions
+	Predictive Modeling - When you gather past data and predict what is likely to happen at a granular level. Like in a bank which customer is likely to default in 	the next 30 days
+	Big Data - Complexity of handling the data goes beyond the traditional systems, due to increase in complexity, volume and variety of data. 
+
+
+	"Forecasting vs Predictive Modeling vs Machine Learning"
+	Forecasting - Process of predicting or estimating the future based on past and present data
+	Predictive Modeling - Is more Granular. Used to perform prediction more granular like "Who are the customers who are likely to buy a product in next month" and then act accordingly 
+	Machine Learning - Method of teaching machines to learn things and improve predictions/behaviour based on data on thier own.
+		Algo to power Google search
+		Amazon Recommendation System
+
+- Applications
+
+Kunal Jain
+Pranav Dar
+Neeraj Singh Sarwan
+
+- Module Test
+
+
+
+
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+2. Python
+Install Anaconda
+python 3.7
+
+We can multiply a string with a number but string and number can not be added.
+In python, we do not have any data type for characters, they are treated as string.
+
+if can have multiple conditions as well as else if statement is also available in python whereas elif statement depicts else if statement hence option b is correct.
+
+if (x > y):print('x is greater than y')  ✔
+
+for i in range(2.0):
+        print(i)
+==> range only takes integer input and as 2.0 is not an integer, there will be an error while we run this code
+
+
+for i in range(11,15,3) :
+   print (i)
+
+==> 11,14   
+
+
+List is ordered whereas dictionary is unordered.
+
+Del would remove the elements at a specified index while remove will remove the mentioned elements
+
+.extend() is used to add multiple elements while .append() is used to add single element to a list
+
+Lists can store mix datatypes like numbers and strings together. Since it can have heterogeneous elements as well, the above statement is incorrect.
+
+Dictionaries can include tuples, dictionaries as well as lists.
+
+********
+	.update() is used to add more values to a dictionary
+
+
+Package is a collection of modules and Print function is a part of the standard library
+
+Design and implementation of specific functionality to be incorporated into a program
+
+If you have accidently used a name that is same as a built-in module, then it might be difficult to import that module, which is basically called name clash. This form does not prevents name clash and thus option b is correct.
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+3. Statistics
+
+
+
+
+
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+4. Predictive Modelling and Machine Learning
+
+
+
+
+
+
+----------------------------------------------------------------------------------------------------

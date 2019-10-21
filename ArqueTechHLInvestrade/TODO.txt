@@ -1,0 +1,113 @@
+TODO
+- Stradle
+- Strangle
+- In the money
+- Out of the money
+- Black-scholes
+
+Premium calculation
+
+
+Bullish Strategies
+	- Bull Call Spread
+	- Bull Put Spread
+	- Call Ratio Back Spread
+	- Bear Call Ladder
+	- Call Butterfly
+	- Synthetic Call
+	- Straps
+
+Bearish-strategies Bearish Spreads
+	- Bear Call Spread
+	- Bear Put Spread
+	- Bull Put Ladder
+	- Put Ratio Back spread
+	- Strip
+	- Synthetic Put
+
+Neutral Strategies 
+	- Long & Short Straddles
+	- Long & Short Strangles
+	- Long & Short Iron Condor
+	- Long & Short Butterfly
+	- Box
+
+
+
+TODO
+Options Basics 
+	- Underlying asset, 
+	- Strike Price, 
+	- Spot price, 
+	- Premium, 
+	- Expiry, 
+	- Settlement, 
+	- Excercise options
+Call options buyer and seller
+Put options buyer and seller
+P/L calculation
+Intrinsic Value
+Break Even point
+Moneyness (In the money(ITM),At the money(ATM), Out of the money(OTM))
+Stradle
+Strangle
+Black-scholes
+
+- Stradle
+- Strangle
+- In the money
+- Out of the money
+- Black-scholes
+
+
+------------------------------------------
+OPTIONS 
+------------------------------------------
+Options Basics 
+	- Underlying asset, 
+	- Strike Price, 
+	- Spot price, 
+	- Premium, 
+	- Expiry, 
+	- Settlement, 
+	- Excercise options
+Call options buyer and seller
+Put options buyer and seller
+P/L calculation
+Intrinsic Value
+Time-Value
+Break Even point
+Moneyness 
+	- In the money(ITM),
+	- At the money(ATM), 
+	- Out of the money(OTM))
+Greeks
+	- Delta
+	- Gamma
+	- Theta
+
+------------------------------------------
+BACKTESTING
+------------------------------------------
+What is ?
+Paramters to check in Back Testing
+	Total P/L
+	Avg P/L
+	Success Ratio
+	Sharpe Ratio
+	Maximum DrawDown
+Factors to consider to selecting appropriate Historic Data
+	Length/time 
+	Market Conditions
+	Asset Classes
+	Benchmark
+
+
+
+------------------------------------------
+To-Do - 02/10/2019
+------------------------------------------
+Greeks 
+	- Vega (Volitality, Implied Volitality)
+Black-Scholes Model
+

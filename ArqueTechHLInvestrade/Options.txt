@@ -1,0 +1,568 @@
+----------------------------------------------------------------------------------------------------------------------------------------------
+									1	26/09/2019
+----------------------------------------------------------------------------------------------------------------------------------------------
+Call and put options are derivative investments, meaning their price movements are based on the price movements of another financial product, which is often called the underlying. 
+
+A call option is bought if the trader expects the price of the underlying to rise within a certain time frame. 
+A put option is bought if the trader expects the price of the underlying to fall within a certain time frame. 
+
+Puts and calls can also be written/sold, which generates income but gives up certain rights to the buyer of the option.
+
+It is important to note that the option buyer pays the option premium at the time of purchasing the option. This is the maximum loss which he could suffer. In other words, he only stands to gain if the price of the underlying rises above the strike price and can suffer no more loss than the option premium paid. On the other hand, in future contracts, the buyer could suffer very large losses as his margin account is marked to market at the end of each trading session. 
+
+
+June 12th 2000 – Index futures were launched
+June 4th 2001 –Index options were launched
+July 2nd 2001 – Stock options were launched
+November 9th 2001 – Single stock futures were launched.
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+									2	27/09/2019
+----------------------------------------------------------------------------------------------------------------------------------------------
+CAll OPTION
+“The buyer of the call option has the right, but not the obligation to buy an agreed quantity of a particular commodity or financial instrument (the underlying) from the seller of the option at a certain time (the expiration date) for a certain price (the strike price). The seller (or “writer”) is obligated to sell the commodity or financial instrument should the buyer so decide. The buyer pays a fee (called a premium) for this right”.
+
+
+
+- Here are a few jargons that we will look into –
+- Strike Price
+- Underlying Price
+- Exercising of an option contract
+- Option Expiry
+- Option Premium
+	1. The concept of premium is pivotal to the Option Theory
+	2. Premium is never a fixed rate, it is a function of many (influencing) factors
+	3. In real markets premiums vary almost on a minute by minute basis
+
+
+- Option Settlement - Options are cash settled in India.
+Normally, this is how the cash flow should look like –
+	- On 26th Trader A exercises his right to buy 8000 shares from Trader B
+	- The price at which the transaction will take place is pre decided at Rs.25 (strike price)
+	- Trader A pays Rs.200,000/- (8000 * 25) to Trader B
+	- Against this payment Trader B releases 8000 shares at Rs.25 to Trader A
+	- Trader A almost immediately sells these shares in the open market at Rs.32 per share and receives Rs.256,000/-
+	- Trader A makes a profit of Rs.56,000/- (256000 – 200000) on this transaction
+
+Another way to look at it is that the option buyer is making a profit of Rs.7/- per shares (32-25) per share. Because the option is cash settled, instead of giving the option buyer 8000 shares, the option seller directly gives him the cash equivalent of the profit he would make. Which means Trader A would receive
+= 7*8000
+= Rs.56,000/- from Trader B.
+Of course, the option buyer had initially spent Rs.10,800/- towards purchasing this right, hence his real profits would be –
+= 56,000 – 10,800
+= Rs.45,200/-
+In fact if you look at in a percentage return terms, this turns out to be a whopping return of 419% (without annualizing).
+
+"Intrinsic Value (IV)"
+Generalizing the P&L for a call option buyer
+	Intrinsic Value (IV) = P&L = Max [0, (Spot Price – Strike Price)] – Premium Paid
+Generalizing the P&L for a put option buyer
+	Intrinsic Value (IV) = P&L = Max [0, (Strike Price – Spot Price)] – Premium Paid
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+									3	30/09/2019
+----------------------------------------------------------------------------------------------------------------------------------------------
+"Option Buyer"
+Serial No.| Possible values of spot|Premium Paid | Intrinsic Value (IV)	 |	P&L (IV + Premium)
+01					1990			  (-) 6.35			1990 – 2050 = 0		= 0 + (– 6.35) = – 6.35
+02					2000			  (-) 6.35			2000 – 2050 = 0		= 0 + (– 6.35) = – 6.35
+03					2010			  (-) 6.35			2010 – 2050 = 0		= 0 + (– 6.35) = – 6.35
+04					2020			  (-) 6.35			2020 – 2050 = 0		= 0 + (– 6.35) = – 6.35
+05					2030			  (-) 6.35			2030 – 2050 = 0		= 0 + (– 6.35) = – 6.35
+06					2040			  (-) 6.35			2040 – 2050 = 0		= 0 + (– 6.35) = – 6.35
+07					2050			  (-) 6.35			2050 – 2050 = 0		= 0 + (– 6.35) = – 6.35
+08					2060			  (-) 6.35			2060 – 2050 = 10	= 10 +(-6.35) = + 3.65
+09					2070			  (-) 6.35			2070 – 2050 = 20	= 20 +(-6.35) = + 13.65
+10					2080			  (-) 6.35			2080 – 2050 = 30	= 30 +(-6.35) = + 23.65
+11					2090			  (-) 6.35			2090 – 2050 = 40	= 40 +(-6.35) = + 33.65
+12					2100			  (-) 6.35			2100 – 2050 = 50	= 50 +(-6.35) = + 43.65
+
+
+"Option seller"
+Serial No.	Possible values of spot	Premium Received	Intrinsic Value (IV)	P&L (Premium – IV)
+01				1990					+ 6.35				1990 – 2050 = 0		= 6.35 – 0 = + 6.35
+02				2000					+ 6.35				2000 – 2050 = 0		= 6.35 – 0 = + 6.35
+03				2010					+ 6.35				2010 – 2050 = 0		= 6.35 – 0 = + 6.35
+04				2020					+ 6.35				2020 – 2050 = 0		= 6.35 – 0 = + 6.35
+05				2030					+ 6.35				2030 – 2050 = 0		= 6.35 – 0 = + 6.35
+06				2040					+ 6.35				2040 – 2050 = 0		= 6.35 – 0 = + 6.35
+07				2050					+ 6.35				2050 – 2050 = 0		= 6.35 – 0 = + 6.35
+08				2060					+ 6.35				2060 – 2050 = 10	= 6.35 – 10 = – 3.65
+09				2070					+ 6.35				2070 – 2050 = 20	= 6.35 – 20 = – 13.65
+10				2080					+ 6.35				2080 – 2050 = 30	= 6.35 – 30 = – 23.65
+11				2090					+ 6.35				2090 – 2050 = 40	= 6.35 – 40 = – 33.65
+12				2100					+ 6.35				2100 – 2050 = 50	= 6.35 – 50 = – 43.65
+
+"A note on margins"
+However when you think about the risk profile of a call option seller, we know that he bears an unlimited risk. His potential loss can exponentially increase as and when the spot price moves above the strike price. Having said this, think about the stock exchange – how can they manage the risk exposure of an option seller in the backdrop of an ‘unlimited loss’ potential? What if the loss becomes so huge that the option seller decides to default?
+As you can see the margin requirements are somewhat similar in both the cases (option writing and trading futures). Of course there is a small difference; we will deal with it at a later stage. Note that option selling requires margins similar to futures trading, and the margin amount is roughly the same.
+ Standardized Portfolio Analysis of Risk (SPAN) margin 
+
+######################## FORMULAS ##############################################
+"FORMULAS"
+"CALL"
+Interinsic Value (IV)= Max [0, (Spot Price – Strike Price)]
+
+"Buyer of Call option"
+P&L = IV – Premium Paid
+Breakeven point = Strike Price + Premium Paid
+
+"Seller of Call option"
+P&L = Premium Recieved – IV
+Breakdown point = Strike Price + Premium Received
+
+
+
+"PUT"
+Interinsic Value (IV)= Max [0, (Strike Price – Spot Price)]
+
+"Buyer of PUT option"
+P&L = IV – Premium Paid
+Breakeven point = Strike Price - Premium Paid
+
+"Seller of PUT option"
+P&L = Premium Recieved – IV
+Breakdown point = Strike Price - Premium Received
+####################### FORMULAS ###############################################
+
+Call option is abbreviated as ‘CE’ (CE is an abbreviation for ‘European Call Option’.)
+Buying a call option is also referred to as ‘Long on a Call Option’ or simply ‘Long Call’
+Selling a call option is also called ‘Shorting a call option’ or simply ‘Short Call’
+
+European Options - The settlement is based on the value of spot market on expiry day.
+American Options - The settlement is dependent of the spot market at that given moment and not really depended on expiry.
+"All options in India are now European in nature"
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Chapter 5 : The Put Option Buying
+- The buyer of the put option is bearish about the underlying asset, while the seller of the put option is neutral or bullish on the same underlying
+- The buyer of the put option has the right to sell the underlying asset upon expiry at the strike price
+- The seller of the put option is obligated (since he receives an upfront premium) to buy the underlying asset at the strike price from the put option buyer if the buyer wishes to exercise his right.
+
+P&L Buyer of PUT option
+ - Generalization 1 – Buyers of Put Options are profitable as and when the spot price goes below the strike price. In other words buy a put option only when you are bearish about the underlying
+ - Generalization 2 – A put option buyer experiences a loss when the spot price goes higher than the strike price. However the maximum loss is restricted to the extent of the premium the put option buyer has paid.
+
+
+- Buy a Put Option when you are bearish about the prospects of the underlying. In other words a Put option buyer is profitable only when the underlying declines in value
+- The intrinsic value calculation of a Put option is slightly different when compared to the intrinsic value calculation of a call option
+Interinsic Value (IV)	= Max [0, (Strike Price – Spot Price)]
+P&L 					= IV - Premium Paid
+Breakdown point 		= Strike Price - Premium Paid
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Chapter 6 : The Put Option selling
+
+NOTE
+You may have a question at this stage – If the outlook is bullish, why write (sell) a put option and why not just buy a call option?
+"Well, the decision to either buy a call option or sell a put option really depends on how attractive the premiums are. At the time of taking the decision, if the call option has a low premium then buying a call option makes sense, likewise if the put option is trading at a very high premium then selling the put option (and therefore collecting the premium) makes sense." Of course to figure out what exactly to do (buying a call option or selling a put option) depends on the attractiveness of the premium, and to judge how attractive the premium is you need some background knowledge on ‘option pricing’. Of course, going forward in this module we will understand option pricing.
+So, with these thoughts assume the trader decides to write (sell) the 18400 Put option and collect Rs.315 as the premium. As usual let us observe the P&L behavior for a Put Option seller and make a few generalizations.
+Do Note – when you write options (regardless of Calls or Puts) margins are blocked in your account. We have discussed this perspective here, request you to go through the same.
+
+
+Serial No.	Possible values of spot	Premium Paid	Intrinsic Value (IV)		P&L (IV + Premium)
+01	             16195             -315					18400 – 16195 = 2205		2205 + (-315) = + 1890
+02	             16510             -315					18400 – 16510 = 1890		1890 + (-315)= + 1575
+03	             16825             -315					18400 – 16825 = 1575		1575 + (-315) = + 1260
+04	             17140             -315					18400 – 17140 = 1260		1260 + (-315) = + 945
+05	             17455             -315					18400 – 17455 = 945			945 + (-315) = + 630
+06	             17770             -315					18400 – 17770 = 630			630 + (-315) = + 315
+07	             18085             -315					18400 – 18085 = 315			315 + (-315) = 0
+08	             18400             -315					18400 – 18400 = 0			0 + (-315)= – 315
+09	             18715             -315					18400 – 18715 = 0			0 + (-315) = -315
+10	             19030             -315					18400 – 19030 = 0			0 + (-315) = -315
+11	             19345             -315					18400 – 19345 = 0			0 + (-315) = -315
+12	             19660             -315					18400 – 19660 = 0			0 + (-315) = -315
+
+Serial No.	Possible values of spot	Premium Received	Intrinsic Value (IV)	P&L (Premium – IV)
+01	16195	+ 315	18400 – 16195 = 2205	315 – 2205 = – 1890
+02	16510	+ 315	18400 – 16510 = 1890	315 – 1890 = – 1575
+03	16825	+ 315	18400 – 16825 = 1575	315 – 1575 = – 1260
+04	17140	+ 315	18400 – 17140 = 1260	315 – 1260 = – 945
+05	17455	+ 315	18400 – 17455 = 945	315 – 945 = – 630
+06	17770	+ 315	18400 – 17770 = 630	315 – 630 = – 315
+07	18085	+ 315	18400 – 18085 = 315	315 – 315 = 0
+08	18400	+ 315	18400 – 18400 = 0	315 – 0 = + 315
+09	18715	+ 315	18400 – 18715 = 0	315 – 0 = + 315
+10	19030	+ 315	18400 – 19030 = 0	315 – 0 = + 315
+11	19345	+ 315	18400 – 19345 = 0	315 – 0 = + 315
+12	19660	+ 315	18400 – 19660 = 0	315 – 0 = + 315
+
+
+"P&L behavior for the put option seller"
+Generalization 1 – Sellers of the Put Options are profitable as long as long as the spot price remains at or higher than the strike price. In other words sell a put option only when you are bullish about the underlying or when you believe that the underlying will no longer continue to fall.
+Generalization 2 – A put option seller can potentially experience an unlimited loss as and when the spot price goes lower than the strike price.
+Interinsic Value (IV)	= Max [0, (Strike Price – Spot Price)]
+P&L 					= Premium Recieved – IV
+Breakdown point 		= Strike Price – Premium Received
+
+
+
+- You sell a Put option when you are bullish on a stock or when you believe the stock price will no longer go down
+- When you are bullish on the underlying you can either buy the call option or sell a put option. The decision depends on how attractive the premium is
+- Option Premium pricing along with Option Greeks gives a sense of how attractive the premiums are
+- The put option buyer and the seller have a symmetrically opposite P&L behavior
+- When you sell a put option you receive premium
+- Selling a put option requires you to deposit margin
+- When you sell a put option your profit is limited to the extent of the premium you receive and your loss can potentially be unlimited
+	Interinsic Value (IV)	= Max [0, (Strike Price – Spot Price)]
+	P&L 					= Premium Recieved – IV
+	Breakdown point 		= Strike Price – Premium Received
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Chapter 7 : Summarizing Call & Put Options
+
+Your Market View	|Option Type	   |Position also called   |Other Alternatives	   |Premium
+____________________|__________________|_______________________|_______________________|______________
+Bullish				 Call Option (Buy)	     Long Call			Buy Futures or Buy Spot	Pay
+Flat or Bullish	Put  Option (Sell)		     Short Put			Buy Futures or Buy Spot	Receive
+Flat or Bearish	Call Option (Sell)		     Short Call			Sell Futures			Receive
+Bearish				 Put Option (Buy)	     Long Put			Sell Futures			Pay
+
+
+
+Now here is another important thing to note, you can buy an option under 2 circumstances –
+1. You buy with an intention of creating a fresh option position
+2. You buy with an intention to close an existing short position
+The position is called ‘Long Option’ only if you are creating a fresh buy position. If you are buying with and intention of closing an existing short position then it is merely called a ‘square off’ position.
+
+Similarly you can sell an option under 2 circumstances –
+1. You sell with an intention of creating a fresh short position
+2. You sell with an intention to close an existing long position
+The position is called ‘Short Option’ only if you are creating a fresh sell (writing an option) position. If you are selling with and intention of closing an existing long position then it is merely called a ‘square off’ position.
+
+
+
+7.2 – Option Buyer in a nutshell
+For the option buyer to be profitable the market should move away from the selected strike price.
+
+7.3 – Option seller in a nutshell
+"Perhaps this is the reason why Nassim Nicholas Taleb in his book “Fooled by Randomness” says “Option writers eat like a chicken but shit like an elephant”. This means to say that the option writers earn small and steady returns by selling options, but when a disaster happens, they tend to lose a fortune."
+
+7.4 - A quick note on Premiums
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+									4	01/10/2019
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+8. Moneyness of an Option Contract
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+									5	02/10/2019
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+									6	03/10/2019
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+VEGA
+16.1 – Volatility Calculation (Historical)
+
+Volitality is calculated using the standard deviation of observation prices
+
+Calculate Annual Range of Nifty using Implied Volatility
+Range = (Nifty Spot - [IV% * Nifty Spot],Nifty Spot + [IV% * Nifty Spot])
+
+'Lesser the VOLATILITY lesser the RANGE lesser the RISK'
+
+
+To obtain Daily Volatility = Annual Volitality/SQRT(365)
+
+
+
+
+
+
+17.4 – Normal Distribution and stock returns
+Normal Distribution
+68%   = 1 STD 
+95%   = 2 STD
+99.5% = 3 STD
+
+EXAMPLE : 
+Daily Average (Mean) Return= 0.04%
+Daily Standard Deviation (Volatility) = 1.046%
+Current market price of Nifty = 8337
+
+"The range within which Nifty is likely to trade in the next 1 year ? "
+\Solution 1 – (Nifty’s range for next 1 year)
+
+Average = 0.04%
+SD = 1.046%
+
+Let us convert this to annualized numbers –
+
+Average = 0.04*252 = 9.66%
+SD = 1.046% * Sqrt (252) = 16.61%
+
+So with 68% confidence I can say that the value of Nifty is likely to be in the range of –
+
+= Average + 1 SD (Upper Range) and Average – 1 SD (Lower Range)
+= 9.66% + 16.61% = 26.66%
+= 9.66% – 16.61% = -6.95%
+
+Note these % are log percentages (as we have calculated this on log daily returns), so we need to convert these back to regular %, we can do that directly and get the range value (w.r.t to Nifty’s CMP of 8337) –
+
+Upper Range
+= 8337 *exponential (26.66%)
+= 10841
+
+And for lower range –
+
+= 8337 * exponential (-6.95%)
+= 7777
+
+The above calculation suggests that Nifty is likely to trade somewhere between 7777 and 10841. How confident I am about this? – Well as you know I’m 68% confident about this.
+
+Let us increase the confidence level to 95% or the 2nd standard deviation and check what values we get –
+
+Average + 2 SD (Upper Range) and Average – 2 SD (Lower Range)
+= 9.66% + 2* 16.61% = 42.87%
+= 9.66% – 2* 16.61% = -23.56%
+
+Hence the range works out to –
+
+Upper Range
+= 8337 *exponential (42.87%)
+= 12800
+
+And for lower range –
+
+= 8337 * exponential (-23.56%)
+= 6587
+
+The above calculation suggests that with 95% confidence Nifty is likely to trade anywhere in the range of 6587 and 12800 over the next one year. Also as you can notice when we want higher accuracy, the range becomes much larger.
+
+I would suggest you do the same exercise for 99.7% confidence or with 3SD and figure out what kind of range numbers you get.
+
+Now, assume you do the range calculation of Nifty at 3SD level and get the lower range value of Nifty as 5000 (I’m just quoting this as a place holder number here), does this mean Nifty cannot go below 5000? Well it certainly can but the chance of going below 5000 is low, and if it really does go below 5000 then it can be termed as a black swan event. You can extend the same argument to the upper end range as well.
+
+
+"The range within which Nifty is likely to trade over the next 30 days."
+\Solution 2 – (Nifty’s range for next 30 days)
+
+We know the daily mean and SD –
+
+Average = 0.04%
+SD = 1.046%
+
+Since we are interested in calculating the range for next 30 days, we need to convert the same for the desired time period –
+
+Average = 0.04% * 30 = 1.15%
+SD = 1.046% * sqrt (30) = 5.73%
+
+So with 68% confidence I can say that, the value of Nifty over the next 30 days is likely to be in the range of –
+
+= Average + 1 SD (Upper Range) and Average – 1 SD (Lower Range)
+= 1.15% + 5.73% = 6.88%
+= 1.15% – 5.73% = – 4.58%
+
+Note these % are log percentages, so we need to convert them back to regular %, we can do that directly and get the range value (w.r.t to Nifty’s CMP of 8337) –
+
+= 8337 *exponential (6.88%)
+= 8930
+
+And for lower range –
+
+= 8337 * exponential (-4.58%)
+= 7963
+
+The above calculation suggests that with 68% confidence level I can estimate Nifty to trade somewhere between 8930 and 7963 over the next 30 days.
+
+Let us increase the confidence level to 95% or the 2nd standard deviation and check what values we get –
+
+Average + 2 SD (Upper Range) and Average – 2 SD (Lower Range)
+= 1.15% + 2* 5.73% = 12.61%
+= 1.15% – 2* 5.73% = -10.31%
+
+Hence the range works out to –
+
+= 8337 *exponential (12.61%)
+= 9457 (Upper Range)
+
+And for lower range –
+
+= 8337 * exponential (-10.31%)
+= 7520
+
+"Volitality Applications in Trading"
+(1) How to select strikes that can be sold/written using normal distribution and 
+(2) How to set up stoploss using volatility.
+
+
+Greeks 
+	- Vega (Volitality, Implied Volitality)
+Black-Scholes Model
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+									7	04/10/2019
+----------------------------------------------------------------------------------------------------------------------------------------------
+STRATEGIES
+	- Stradle
+	- Strangle
+	- Bear C/P Spread
+	- Bull C/P Spread
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+									8	05/10/2019
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+									9	07/10/2019
+----------------------------------------------------------------------------------------------------------------------------------------------
+Bullish Strategies
+	- Bull Call Spread ☆
+	- Bull Put Spread ☆
+	- Call Ratio Back Spread
+	- Bear Call Ladder
+	- Call Butterfly
+	- Synthetic Call
+	- Straps
+
+Bearish-strategies Bearish Spreads
+	- Bear Call Spread ☆
+	- Bear Put Spread ☆ 
+	- Bull Put Ladder
+	- Put Ratio Back spread
+	- Strip
+	- Synthetic Put
+
+Neutral Strategies 
+	- Long & Short Straddles ☆
+	- Long & Short Strangles ☆
+	- Long & Short Iron Condor
+	- Long & Short Butterfly
+	- Box
+
+1. Max Pain for option writing – (some key observations and practical aspects)
+2. Volatility Arbitrage employing Dynamic Delta hedging
+
+
+
+Sub Topics for each Strategy
+	- Background, Implementation, Payoff, Breakeven, and perhaps the right STRIKES to use considering the time to expiry.
+
+------------------------------
+1. Bull Call Spread
+	- moderate
+	- scenarios 
+		- Fundamental perspective 
+		- Technical Perspective
+		- Quantitative Perspective
+For example –
+Date – 23rd November 2015
+Outlook – Moderately bullish (expect the market to go higher but the expiry around the corner could limit the upside)
+
+Nifty Spot – 7846
+ATM – 7800 CE, premium – Rs.79/-
+OTM – 7900 CE, premium – Rs.25/-
+Bull Call Spread, trade set up –
+Buy 7800 CE by paying 79 towards the premium. Since money is going out of my account this is a debit transaction
+Sell 7900 CE and receive 25 as premium. Since I receive money, this is a credit transaction
+
+The net cash flow is the difference between the debit and credit i.e 79 – 25 = 54.
+Generally speaking in a bull call spread there is always a ‘net debit’, hence the bull call spread is also called referred to as a ‘debit bull spread’.		
+
+Set 1 – Bull call spread with ITM and ATM strikes
+
+Lower Strike (ITM, Long)	7700
+Higher Strike (ATM, short)	7800
+Spread	7800 – 7700 = 100
+Lower Strike Premium Paid	296
+Higher Strike Premium Received	227
+Net Debit	296 – 227 = 69
+***********************************************
+Max Loss (Net Debit)	69
+Max Profit (Spread – Net Debit)	100 – 69 = 31
+***********************************************
+Breakeven	7700 + 69 = 7769
+Remarks	Considering the outlook is moderately bullish,
+7769 breakeven is easily achievable,
+however the max profit is 31,
+skewing the risk (69 pts) to reward (31 pts) ratio.
+
+
+"Reduced Strategy Cost."
+Do remember your outlook is ‘moderately bullish’. Given this buying an OTM option is ruled out. If you were to buy the ATM option you would have to pay Rs.79 as the option premium and if the market proves you wrong, you stand to lose Rs.79. However by implementing a bull call spread you reduce the overall cost to Rs.54 from Rs.79. As a tradeoff you also cap your upside. In my view this is a fair deal considering you are not aggressively bullish on the stock/index.
+A moderate move would mean you expect a movement in the stock/index but the outlook is not too aggressive
+One has to quantify ‘moderate’ by evaluating the volatility of the  stock/index
+Bull Call spread is a basic spread that you can set up when the outlook is moderately bullish
+Classic bull call spread involves buying ATM option and selling OTM option – all belonging to same expiry, same underlying, and equal quantity
+The theta plays an important role in strike selection
+The risk reward gets skewed based on the strikes you choose
+BreakEven = Lower Strike + Net Debit
+------------------------------
+2. Bull Put Spread
+	- moderate
+	- scenarios 
+		- Fundamental perspective 
+		- Technical Perspective
+		- Quantitative Perspective
+EXAMPLE :
+
+Bull Put spread with 7500 PE (OTM) and 7700 PE (ITM)
+
+Lower Strike (OTM, Long)	7500
+Higher Strike (ITM, short)	7700
+Spread	7700 – 7500 = 200
+Lower Strike Premium Paid	62
+Higher Strike Premium Received	137
+Net Credit	137 – 62 = 75
+***********************************************
+Max Loss (Spread – Net Credit)	200 – 75 = 125
+Max Profit (Net Credit)	75
+************************************************
+Breakeven (Higher Strike – Net Credit)	7700 – 75 = 7625
+
+
+The Bull Put Spread is an alternative to the Bull Call Spread. Its best executed when the outlook on the market is ‘moderately bullish’
+Bull Put Spread results in a net credit
+The Bull Put Spread is best executed when the market has cracked, put premiums are high, the volatility is on the higher side, and you expect the market to hold up (without cracking further)
+The Bull Put strategy involves simultaneously buying a OTM Put option and selling a ITM Put option
+Maximum profit is limited to the extent of the net credit
+Maximum loss is limited to the Spread minus Net credit
+Breakeven is calculated as Higher Strike – Net Credit
+One can create the spread by employing any OTM and ITM strikes
+Higher the spread, higher the profit potential, and higher the breakeven point.
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+"COURSES"
+Strategy List - https://web.sensibull.com/optionsStrategiesList
+
+Varsity
+	Options Theory for Professional Trading - https://zerodha.com/varsity/module/option-theory/
+	Option Strategies - https://zerodha.com/varsity/module/option-strategies/
+
+
+Quantra - https://quantra.quantinsti.com
+
+Udacity
+	1. Machine Learning for Trading - https://www.udacity.com/course/machine-learning-for-trading--ud501
+	2. Artificial Intelligence for Trading - https://www.udacity.com/course/ai-for-trading--nd880
+
+DataCamp
+	Python For Finance: Algorithmic Trading - https://www.datacamp.com/community/tutorials/finance-python-trading
+
+Udemy
+	1. Options Trading Basics (3-Course Bundle) - https://www.udemy.com/course/learn-options-trading-courses/
+	2. Options Trading MasterClass: Options With Technical Analysis - https://www.udemy.com/course/option-trading-option-strategies-with-technical-analysis/
+	3. Options Trading 101: The Basics - https://www.udemy.com/course/options-trading-101-the-basics
+	4. Options Trading Essentials: The ULTIMATE Guides- https://www.udemy.com/course/options-trading-essentials/learn/lecture/6917246
+	5. Free Options 101 - Basic of Call and Put Options in 1 Hours - https://www.udemy.com/course/free-options-101-basic-of-call-and-put-options-in-1-hours/learn/lecture/5609700
+	6. Introduction to Options - Complete Course for Beginners - https://www.udemy.com/course/introduction-to-options-start-trading-now/learn/lecture/3249140
+	7. What is a Stock Option? - https://www.udemy.com/course/what-is-a-stock-option/
+
+Youtube
+	Options Basics - https://www.youtube.com/playlist?list=PL33AZa4cv-o58ldr-5zSn4ROx4SZG7Jyo

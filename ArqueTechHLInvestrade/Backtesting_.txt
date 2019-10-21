@@ -1,0 +1,73 @@
+Backtesting is basically evaluating the performance of a trading strategy on historical data — if we used a given strategy on a set of assets in the past, how well/bad would it have performed. Of course, there is no guarantee that past performance is indicative of the future one, but we can still investigate!
+
+
+Articles
+	- Investopedia Backtesting - https://www.investopedia.com/terms/b/backtesting.asp
+	- Backtesting Systematic Trading Strategies in Python: Considerations and Open Source Frameworks - https://www.quantstart.com/articles/backtesting-systematic-trading-strategies-in-python-considerations-and-open-source-frameworks
+	- What Is Backtesting A Trading Strategy? - https://blog.quantinsti.com/backtesting/
+	- Algorithmic trading in less than 100 lines of Python code - https://www.oreilly.com/learning/algorithmic-trading-in-less-than-100-lines-of-python-code
+
+Key Decisions for Backtesting Trading Strategy
+	- Choose the right market/asset segment
+	- Data to cover the variety of market conditions
+	- Platform to code and backtest trading strategy
+	- Evaluate the system on benchmark parameters
+
+Typical Backtesting Parameters to Evaluate a Trading System 
+- Total P/L 
+- Average P/L 
+- Success Ratio 
+- Maximum Drawdown 
+- Sharpe Ratio
+
+Platforms Used for Backtesting
+	- AmiBroker, 
+	- Tradestation and 
+	- Ninja Trader
+	- Quantopian, 
+	- MetaTrader,
+
+Frameworks : 
+	- zipline - https://github.com/quantopian/zipline
+	- Pandas, 
+	- Quantopian
+	- IbPy - https://github.com/blampe/IbPy
+	- PyAlgoTrade - https://github.com/gbeced/pyalgotrade
+	- optopsy - https://github.com/michaelchu/optopsy
+	- bt - http://pmorissette.github.io/bt/
+	- Backtrader - https://github.com/backtrader/backtrader
+	- pysystemtrade - https://github.com/robcarver17/pysystemtrade
+	- QSTrader - https://github.com/mhallsmoore/qstrader
+Libraries that might be useful for BT:
+	PyAlgoTrade
+	Zipline
+	Pybacktest
+	Ultrafinance
+	TWP (Trading With Python)
+	auquan
+
+
+
+
+	
+Backtesting Components
+Besides the pitfalls, it’s good to know that your backtester usually consists of some four essential components, which should usually present in every backtester:
+	- A DATA HANDLER, which is an interface to a set of data,
+	- A STRATEGY, which generates a signal to go long or go short based on the data,
+	- A PORTFOLIO, which generates orders and manages Profit & Loss (also known as “PnL”), and
+	- An EXECUTION HANDLER, which sends the order to the broker and receives the “fills” or signals that the stock has been bought or sold.
+
+
+
+Zipline - https://github.com/quantopian/zipline 
+		- http://www.zipline.io/
+		- https://www.youtube.com/watch?v=J4LTIixReMA
+
+Quantopian
+	API-Key - NySuHwRz_oKwcwJm4p5C
+
+Quandl - https://docs.quandl.com/docs/data-organization
+		 https://docs.quandl.com/docs/python-tables
+
+
+
