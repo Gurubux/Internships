@@ -91,6 +91,198 @@ If you have accidently used a name that is same as a built-in module, then it mi
 ----------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
 3. Statistics
+"MEASURES OF CENTRAL TENDENCY I"
+	Mode of the data
+		Mode is the most frequent occuring number which is 8 in the above example.
+		Mode is the number which appears most frequently
+		df['col'].mode()
+		Multiple modes - Bimodal
+		Mode is calculated for the categorical variables
+
+	Types of variables
+		- Continous
+			A continuous variable can take infinite number of possible values. Gender will only have two values as Male or Female and hence it is a categorical variable and not a continuous variable.
+		- Categorical
+			- Nominal --> No order ==> Gender
+			- Ordinal --> If there is an order in the data ==> Feedback (Excellent, Good, Bad) , Year of Study (Senior, Mid Year, Junior)
+				As the number of goals can only be some specific numbers like 1,2,3 or 4 whereas the time can have any possible value as 12.5, 13.6, 120, etc. Hence Goals are discrete and Time is continuous.
+
+	Mean
+		Average
+			df['col'].mean()
+			Not a robust metric - If an outlier (value on a different scale than other values) is added to a data, it will affect the mean.
+			Highly affected by Outliers
+				First 10 prime numbers are 2, 3, 5, 7, 11, 13, 17, 19, 23, 29. Sum of these numbers will be 129 and hence their mean will be 12.9
+
+"MEASURES OF CENTRAL TENDENCY II"
+	Outliers in the datasets
+		Values which are extremely low are also outliers. Suppose the series is 1,1000,1002,1003,1004,1005,1006. In this case 1 is an outlier.
+		Median of the dataset
+			Middle value
+			ROBUSt and NOT AFFECTED BY OUTLIERS
+			First 20 whole numbers are 0 to 19. Now median for even numbers=n/2 and n/2+1, i.e. 10th and 11th term, i.e. 9 and 10. So, the median will be (10+9) / 2 = 9.5
+			In case of even numbers, we do not have single middle term and hence we take the average of middle two terms after arranging the data in ascending order.
+			Even if we have two middle term in case of even numbers, we take their average and hence the dataset only have one median.
+
+"UNDERSTANDING THE SPREAD OF DATA"
+	Spread of the data
+		Range
+			Range is the difference between the minimum and the maximum value of the series.
+			Max - Min
+			The minimum and maximum values in the given time is 2.1 hrs and 10.3 hrs respectively. Hence the range will be 10.3 – 2.1 = 8.2 hrs
+		IQR
+			IQR is the difference between the third and the first quartile and is used to measure the spread of the data.
+			0.75th - 0.25th 
+			Takes into consideration only 50% of the data spread
+			Robust in case of Outliers
+			Median of the above dataset is 52. Series to the right of median is : 53 54 54 55. To calculate the third quartie, we can take the median of this series which is : (54+54) / 2 = 54
+			
+			df['col'].quantile(0.75) - df['col'].quantile(0.25)
+
+		Variance
+			Variance is calculated using all the data points and hence is affected by all the data points.
+			Adding a constant to each value in a data set does not change the distance between values so the variance remains the same.
+
+		STD
+			If the data is being considered a population on its own, we divide by the number of data points, N and If the data is a sample from a larger population, we divide by one fewer than the number of data points in the sample, n−1
+			Adding a constant to each value in a data set does not change the distance between values so the standard deviation remains the same.
+			How many values, in the below series, fall within one standard deviation of the mean?
+			180, 313, 101, 255, 202, 198, 109, 183, 181, 113, 171, 165, 318, 145, 131, 145, 226, 113, 268, 108
+
+			You have to find the number of points that falls in the range within one standard deviation of the mean. So, you can first calculate the mean and the standard deviation of the given data. It comes out to be 181.25 and 64.65 respectively. Now, to calculate one standard deviation above means, you add the standard deviation to the mean once. So, when you add 64.65 (standard deviation) with 181.25 (mean), you approximately get 245, and to calculate one standard deviation below means, you subtract the standard deviation from the mean once. So, when you subtract 64.65 (standard deviation) from 181.25 (mean), you approximately get 117. Hence the range that we get is 117-245. Hence you need to count the numbers which are within this range. You have 11 numbers in this range, so your answer is 11
+
+"DATA DISTRIBUTION"	
+Frequency Tables
+	df['col'].value_counts()
+		Chemistry    36
+		Physics      35
+		English      29
+
+Histograms
+	Used for Continous Variables
+	X = bins
+	Y = Frequency of Bins
+
+	plt.hist(x = 'col', data=df,bins = 5)
+
+	Different from BAR Graphs in that Bar Graphs are used for categorical variables.
+	Each bin in a histogram have same size. We can change the number of bins but the size of each bin will be same.
+
+"INTRODUCTION TO PROBABILITY"
+Introduction to Probability
+	Likelihood of something Happening
+	Experiment
+	Outcome
+	Event
+	Probability
+	Probability is the measure of chance of an uncertain event in form of numerical figures (0 to 1)
+
+Calculating Probabilities of events
+	
+Bernoulli Trials and Probability Mass Function
+	Sum Of Dice 	Frequency 		Probabilities
+	2				1					1/36
+	3				2					2/36
+	4				3					3/36
+	5				4					4/36
+	6				5					5/36
+	7				6					6/36
+	8				5					5/36						
+	9				4					4/36					
+	10				3					3/36		
+	11				2					2/36					
+	12				1					1/36					
+
+	Probability Mass distribution
+	Plotting the probabilities on a graph
+
+	Events with just two Outcomes
+		Coin
+		Hired
+		Win/lose
+
+		Bernoulli Trials -  Experiments that have only two Outcomes
+		PMD of number of successes in Bernoulli trials is known as a Binomial Distribution
+
+		Likelihood of team Winning = 75%
+		Likelihood of team Losing  = 25%
+		P(w) = 0.75 = p
+		P(l) = 0.25 = q
+		Best of 5 games
+		Thus, possibilities of number of wins are X = [0,1,2,3,4,5]
+
+
+
+
+	Number of Win(k) Frequency(nCk) 	Probabilities (p^k * q^n-k * nCk)
+	0				 1 LLLLL			(0.25)^5 * (0.75)^0 * 1
+	1				 5					(0.25)^4 * (0.75)^1 * 5
+	2				 10					(0.25)^3 * (0.75)^2 * 10
+	3				 10					(0.25)^2 * (0.75)^3 * 10
+	4				 5					(0.25)^1 * (0.75)^4 * 5
+	5				 1					(0.25)^0 * (0.75)^5 * 1		
+
+
+	k n
+
+	P(x = k) = nCk * p^k * q^nk
+	nCk = n!  / (n-k)! (k!)
+
+
+	Binomial Distribution is probabilities plot of (p^k * q^n-k * nCk)
+
+	when p=q=0.5 
+		then Normal Distribution
+	p>q or q>p
+		then Skewed Distribution
+
+	probability of success and failure is p and q respectively. Also the sum of these probability is 1. Hence, probability of failure is given by :
+	p + q = 1
+	
+	q = 1 – p
+
+
+	10 unfair coins are tossed simultaneously where the probability of getting head for each coin is 0.6. Find the probability of getting 4 heads.
+	probability is : 10C4 * 0.6^4 * 0.4^6 = 0.11147
+
+	
+
+Probabilities for Continuous Random Variables
+	Instead of calculation probability of each value, we calculate the probability of outcome falling in a particular Range
+	Probability Mass Distribution into Probability Density Distribution
+	Probabilies are calculated by the area under the graph of the probability Density Function
+	Continous Random Variables
+		A continuous random variable can take any possible value between two points whereas a discrete random variable can only take discrete values.
+		Probability density function is used to represent the probability distribution of a continuous random variable.
+
+
+	Probability Density Function --> Amount of Sugar in an Orange
+		P(Amount of sugar in an orange in the range 2 to 2.1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
